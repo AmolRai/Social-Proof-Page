@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;800&display=swap');
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  background: url('images/bg-pattern-top-desktop.svg') left top no-repeat, url('images/bg-pattern-bottom-desktop.svg') right bottom no-repeat;
+}
+
+.topDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.leftDiv {
+  max-width: 55vh;
+}
+
+.rightDiv {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.reviews {
+  background-color: #F7F2F8;
+  color: hsl(300, 43%, 22%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  gap: 20px;
+  font-weight: 600;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 60px;
+  font-weight: 500;
+}
+
+.attribution a {
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+
+.leftDiv p {
+  font-size: 18px;
+  color: hsl(303, 10%, 53%);
+  margin-top: -25px;
+  line-height: 25px
+}
+
+.leftDiv h1 {
+  font-size: 70px;
+  color: hsl(300, 43%, 22%);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 150vh;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.firstBottom {
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  max-width: 34vh;
+  padding: 35px;
+  border-radius: 10px;
+  line-height: 1.2;
+}
+
+.secondBottom {
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  max-width: 34vh;
+  padding: 35px;
+  border-radius: 10px;
+  line-height: 1.2;
+  margin-top: 30px;
+}
+
+.thirdBottom {
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  max-width: 34vh;
+  padding: 35px;
+  border-radius: 10px;
+  line-height: 1.2;
+  margin-top: 60px;
+}
+
+@media (max-width: 1000px) {
+  .bottom {
+    flex-wrap: wrap;
+  }
+
+  .topDiv {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .thirdBottom {
+    margin-top: 0;
+  }
+
+  .reviews {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background: url('images/bg-pattern-top-mobile.svg') left top no-repeat, url('images/bg-pattern-bottom-mobile.svg') right bottom no-repeat;
+  }
+
+  .rated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  .topDiv {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .secondBottom {
+    margin-top: 1px;
+  }
+
+  .thirdBottom {
+    margin-top: 1px;
+  }
+
+  .reviews {
+    flex-direction: column;
+  }
+}
